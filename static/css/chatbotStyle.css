@@ -1,0 +1,236 @@
+* {
+    margin: 0;
+    padding: 1px;
+    box-sizing: border-box;
+    /* font-family: 'Nunito', sans-serif; */
+    font-family: courier;
+}
+
+/* Body Format */
+html, body {
+    /* background: linear-gradient(120deg, rgba(23, 190, 187, 1), rgba(240, 166, 180, 1)); */
+    background: #F9F6F1;
+    /* background: white; */
+    /* overflow: hidden; */
+    font-family: courier;
+    justify-content: center;
+}
+
+/* Building Chatbot Content */
+#chatbox {
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    margin-top: 60px;
+    bottom: 0;
+    padding-bottom: 30px;
+    overflow-y: scroll;
+    height: 400px;
+    /* scroll-padding: 50px 0 0 50px; */
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 80vh;
+    width: auto;
+
+}
+
+/* div.chatbox {
+  overflow:auto;
+} */
+
+.container h1 {
+    margin: 0.5em auto;
+    text-align: center;
+    font-family: courier;
+}
+
+/* Chatbot Container  */
+.chatbot {
+    background: rgba(255, 255, 255, 0.05);
+    width: 600px;
+    border-radius: 0.2em;
+    position: relative;
+    /* box-shadow: 1px 1px 12px rgba(0, 0, 0, 0.1); */
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+}
+
+.chatbox p {
+    float: left;
+    text-align: left;
+    margin: -0.25em 2em;
+    color: #fff;
+    width: 400px;
+}
+
+ input {
+    background: rgba(255, 255, 255, 0.05);
+    position: absolute;
+    bottom: 0;
+    left: 30px;
+    border: none;
+    width: 50%;
+    padding: 1em;
+    outline: none;
+    /* color: rgba(255, 255, 255, 0.9); */
+    font-weight: 300;
+    font-family: courier;
+    background-color: #F3F1ED;
+}
+
+.inputBox{
+  padding-bottom: 20px;
+}
+
+
+/* ::-webkit-input-placeholder {
+    color: rgba(255, 255, 255, 0.9);
+} */
+
+::placeholder {
+    /* color: rgba(255, 255, 255, 0.9); */
+     color: black;
+}
+
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  /* background: #FEE8C2; */
+  background-color: #DFDEDE;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #C2C2C2;
+}
+
+/* Input and Response */
+ #userInput {
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+  margin-top: 60px;
+}
+#textInput {
+  width: 90%;
+  border: none;
+  /* border-bottom: 3px solid black; */
+  font-family: courier;
+  font-size: 17px;
+
+}
+.userText {
+  padding-top: 10px;
+  color: black;
+  font-family: courier;
+  font-size: 17px;
+  text-align: right;
+  line-height: 30px;
+}
+.userText span {
+  background-color: #419AF2;
+  padding: 6px;
+  border-radius: 1.15rem;
+  line-height: 1.25;
+  max-width: 75%;
+  padding: 0.5rem .875rem;
+  position: relative;
+  word-wrap: break-word;
+}
+.botText {
+  /* padding: 10px; */
+  padding-top: 10px;
+  color: black;
+  font-family: courier;
+  font-size: 17px;
+  text-align: left;
+  line-height: 30px;
+}
+
+/* Bot Messages */
+.botText span {
+  /* background-color: #8D8E8F; */
+  background-color: #C0C0C0;
+  padding: 6px;
+  border-radius: 1.15rem;
+  line-height: 1.25;
+  max-width: 75%;
+  padding: 0.5rem .875rem;
+  position: relative;
+  word-wrap: break-word;
+}
+
+/* Slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
